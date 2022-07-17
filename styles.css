@@ -1,0 +1,70 @@
+  
+  body{
+    background-color: azure;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    font-size: 34px;
+    color: rgb(85, 99, 95);
+    line-height: 48px;
+    border-radius: 6px;
+    background-color:rgb(220, 239, 181)
+  }
+
+  h2 {
+    text-align: left;
+    background-color: rgb(203, 231, 221);
+    text-align: center;
+    font-style: italic;
+    font-size:x-large;
+    border-radius: 6px;
+  }
+  h3{
+    text-align: center;
+    background-color: rgb(242, 242, 159);
+    border-radius: 6px;
+    color:rgb(85, 99, 95);
+    font-style:normal;
+  }
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 80px;
+    border-radius: 100px;
+  }
+form {
+    text-align: center;
+    background-color: beige;
+    border-radius: 6px;
+  }
+  .btn-btn-primary {
+    background-color: rgb(216, 235, 145);
+    border-radius: .5rem;
+    display: inline;
+  }
+  header {
+    text-align: left;
+    font-size:x-large;
+    font-family:sans-serif;
+    color:rgb(85, 99, 95);
+  }
+  ul{
+    margin: o;
+    padding: 0;
+    display: block;
+    text-align: left;
+  }
+  li {
+    color:rgb(85, 99, 95);
+    list-style: none;
+    text-align: left;
+    margin: 0;
+  }
+.temperature {
+  color:rgb(85, 99, 95);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 0.5;
+}

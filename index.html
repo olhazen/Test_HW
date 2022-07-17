@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>
+    Your Inspirational Weather Forecast
+  </h1>
+  <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+            </div>    
+      <div class="row">
+        <div class="col order-1">
+           <header id="city">
+           </header>
+           <ul>
+            <li id="date">
+            </li>
+            <li id="description">
+            </li>
+           </ul>
+        </div>
+        <div class="col order-2">
+  <br> 
+          <span class="temperature" id="temperature"></span> <span class="units">
+            °C
+          </span>
+        </div>
+        <div class="col order-3">
+          <ul>
+            <li>
+              Humidity: <span id="humidity"></span> 
+            </li>
+            <li>
+              Wind: <span id="wind"></span> 
+            </li>
+          </ul>
+          <li>
+            </li>
+          </li>
+        </div>
+      </div>
+    </div>
+    </br> 
+<p>
+<form class="search-form" id="search-form">
+  <input type="text" name="name" placeholder="Enter your city" id="city-input"> 
+  <input type="submit" value="Let's Go!">
+   <button class="btn btn-success w-100"
+   id="current-location-button"> 
+   Current Location
+  </button>
+</form>
+</p>
+<h2>
+  <div class="d-grid gap-2 d-md-block">
+  </div>
+</div>
+</form>
+</h2>
+<h3>
+  The Next 5 Days
+</h3>
+<div class="row">
+<div class="card" style="width: 16rem;">
+  <img src="media/sun.png" class="card-img-top1" alt="...">
+  <div class="card-body">
+    <h5 class="card-title-1">Monday, June 20
+    </h5>
+    <p class="card-text1">"You do not find the happy life. You make it." Camilla Eyring Kimball </p>
+</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"> +28°C | <a href="#">°F</li>
+  <li class="list-group-item"> Precipitation: 0% </li>
+  <li class="list-group-item"> Humidity: 10% </li>
+  <li class="list-group-item"> Wind: 12 km/h </li>
+</ul>
+<div class="card-body">
+  <a href="#" class="card-link">Previous Day</a>
+  <a href="#" class="card-link">Next Day</a>
+  </div>
+</div>
+<div class="card" style="width: 16rem;">
+  <img src="media/partlycoudy.png" class="card-img-top2" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Tuesday, June 21</h5>
+    <p class="card-text">"If your Monday did not go so well, Tuesday is the day to try again." Collective Wisdom</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">+27 °C | <a href="#">°F</li>
+      <li class="list-group-item"> Precipitation: 0% </li>
+      <li class="list-group-item"> Humidity: 250% </li>
+      <li class="list-group-item"> Wind: 13 km/h </li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Previous Day</a>
+    <a href="#" class="card-link">Next Day</a>
+  </div>
+</div>
+<div class="card" style="width: 16rem;">
+  <img src="media/cloudy.jpeg" class="card-img-top3" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Wednesday, June 22</h5>
+    <p class="card-text">"A good deed is never lost; and he who plants kindness gathers love."" Rock Bankole</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"> +25°C | <a href="#">°F</li>
+      <li class="list-group-item"> Precipitation: 1% </li>
+      <li class="list-group-item"> Humidity: 17% </li>
+      <li class="list-group-item"> Wind: 10 km/h </li>
+  </ul>
+
+  <div class="card-body">
+    <a href="#" class="card-link">Previous Day</a>
+    <a href="#" class="card-link">Next Day</a>
+  </div>
+</div>
+<div class="card" style="width: 16rem;">
+  <img src="media/rainy.png" class="card-img-top4" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Thursday, June 23</h5>
+    <p class="card-1">"It is wonderful how much may be done if we are always doing." Thomas Jefferson</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"> +24°C | <a href="#">°F</li>
+      <li class="list-group-item"> Precipitation: 4% </li>
+      <li class="list-group-item"> Humidity: 20% </li>
+      <li class="list-group-item"> Wind: 11 km/h </li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Previous Day</a>
+    <a href="#" class="card-link">Next Day</a>
+  </div>
+</div>
+<div class="card" style="width: 16rem;">
+  <img src="media/sun.png" class="card-img-top6" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Friday, June 24</h5>
+    <p class="card-text">"Perfectionism is often the deadliest enemy for writers and anyone else who wants to achieve any goal in their life." N.C. Harley</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"> +28°C | <a href="#">°F</li>
+      <li class="list-group-item"> Precipitation: 0% </li>
+      <li class="list-group-item"> Humidity: 12% </li>
+      <li class="list-group-item"> Wind: 11 km/h </li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Previous Day</a>
+    <a href="#" class="card-link">Next Day</a>
+  </div>
+</div>
+</div>
+<script src="src/index.js">
+</script>
+</body>
+</html>
